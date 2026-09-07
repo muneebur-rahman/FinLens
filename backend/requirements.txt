@@ -1,0 +1,20 @@
+# FinLens Backend Dependencies
+# Inspected from actual imports across backend/app/, backend/tests/, and backend/create_test_data.py
+
+# Core API & ASGI Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+pydantic>=2.10.0
+
+# Data Processing & Numerical Analytics
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Bank Statement Parsing (PDF & CSV)
+pdfplumber>=0.11.0
+pypdf>=5.0.0
+
+# Test Statement Generation & Testing
+reportlab>=4.2.0
+pytest>=8.0.0

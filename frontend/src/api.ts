@@ -1,6 +1,6 @@
-import { DashboardData, Transaction, TaxSummary } from './types';
+import { DashboardData, Transaction } from './types';
 
-const API_BASE = '/api';
+const API_BASE =import.meta.env.VITE_API_URL || '/api';
 
 export async function uploadStatement(file: File): Promise<DashboardData> {
   const formData = new FormData();

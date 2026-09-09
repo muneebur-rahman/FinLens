@@ -23,7 +23,7 @@ app = FastAPI(
 # Enable CORS for local Vite development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://finlens-amber.vercel.app"], #change 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
